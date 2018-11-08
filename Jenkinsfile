@@ -3,7 +3,8 @@ node{
      git 'https://github.com/sarathplutor/sampleapp'
    }
    stage('Compile-Package'){
-     sh 'mvn package'
+     def mvnHome = 'tool name: 'mavaTest', type: 'maven''
+      sh "${mvnHome}/bin/mvn package"
    }
       
 
